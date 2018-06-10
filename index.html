@@ -12,17 +12,6 @@
 </head>
 
 <body>
-  <div id="app">
-    <h2 class="app-title" title="">Palindrome Checker</h2>
-
-    <label for="input">Input a String</label>
-    <input type="text" id="input" value="" placeholder="like RaceCar!">
-
-    <button id="submit">Submit</button>
-
-    <p id="output"></p>
-  </div>
-
   <div id="mocha"></div>
   <script src="https://unpkg.com/expect@%3C21/umd/expect.min.js"></script>
   <script src="https://unpkg.com/mocha@4.0.1/mocha.js"></script>
@@ -33,6 +22,17 @@
   <script type="module">
     import "./index.js"; import "./index.test.js"; mocha.checkLeaks(); mocha.run();
   </script>
+
+  <div id="app">
+    <h2 class="app-title" title="">Palindrome Checker</h2>
+
+    <label for="input">Input a String</label>
+    <input type="text" id="input" value="" placeholder="like RaceCar!">
+
+    <button id="submit">Submit</button>
+
+    <p id="output"></p>
+  </div>
 </body>
 
 </html>
